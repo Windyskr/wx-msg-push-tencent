@@ -70,7 +70,7 @@ func ParseRequest(event map[string]interface{}) (*SimpleRequest, error) {
 	}
 
 	if request.ToUser == "" && request.ToParty == "" && request.ToTag == "" {
-		request.ToUser = "@all"
+	
 	}
 
 	return request, nil
